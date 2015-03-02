@@ -10,6 +10,7 @@ PKG_MD5SUM:=389c2623619281e6849da25cee7e1bb7
 PKG_BUILD_DIR:=$(BUILD_DIR)/alljoyn-services-$(PKG_VERSION)-src
 PKG_SOURCE:=alljoyn-services-$(PKG_VERSION)-src.tar.gz
 PKG_SOURCE_URL:=https://allseenalliance.org/releases/alljoyn/14.12/
+
 # PKG_SOURCE_URL:=https://build.allseenalliance.org/baseservices/view/BaseMaster_CoreRB14.12/job/OpenWRT_CC_base-services_Master/lastSuccessfulBuild/artifact/alljoyn_tarball/
 
 # SCons supports parallel builds but does not support make's jobserver

@@ -4,12 +4,14 @@ AJ_SERVICE_NAME:=ControlPanel
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=alljoyn-$(AJ_SERVICE)
-PKG_VERSION:=0.0.1
+PKG_VERSION:=14.12.00
 PKG_RELEASE:=1
-PKG_MD5SUM:=
+PKG_MD5SUM:=389c2623619281e6849da25cee7e1bb7
 PKG_BUILD_DIR:=$(BUILD_DIR)/alljoyn-services-$(PKG_VERSION)-src
 PKG_SOURCE:=alljoyn-services-$(PKG_VERSION)-src.tar.gz
-PKG_SOURCE_URL:=https://build.allseenalliance.org/baseservices/view/BaseMaster_CoreRB14.12/job/OpenWRT_CC_base-services_Master/lastSuccessfulBuild/artifact/alljoyn_tarball/
+PKG_SOURCE_URL:=https://allseenalliance.org/releases/alljoyn/14.12/
+
+# PKG_SOURCE_URL:=https://build.allseenalliance.org/baseservices/view/BaseMaster_CoreRB14.12/job/OpenWRT_CC_base-services_Master/lastSuccessfulBuild/artifact/alljoyn_tarball/
 
 # SCons supports parallel builds but does not support make's jobserver
 PKG_BUILD_PARALLEL:=$(if $(CONFIG_PKG_BUILD_USE_JOBSERVER),0,1)
@@ -122,4 +124,3 @@ endef
 
 $(eval $(call BuildPackage,$(PKG_NAME)))
 $(eval $(call BuildPackage,$(PKG_NAME)-samples))
-
