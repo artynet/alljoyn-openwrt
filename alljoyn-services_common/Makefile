@@ -6,7 +6,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=alljoyn-$(AJ_SERVICE)
 PKG_VERSION:=14.12.00
 PKG_RELEASE:=1
-PKG_MD5SUM:=
+PKG_MD5SUM:=389c2623619281e6849da25cee7e1bb7
 PKG_BUILD_DIR:=$(BUILD_DIR)/alljoyn-services-$(PKG_VERSION)-src
 PKG_SOURCE:=alljoyn-services-$(PKG_VERSION)-src.tar.gz
 PKG_SOURCE_URL:=https://allseenalliance.org/releases/alljoyn/14.12/
