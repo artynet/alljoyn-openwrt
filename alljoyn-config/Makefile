@@ -13,7 +13,6 @@ PKG_SOURCE_URL:=https://allseenalliance.org/releases/alljoyn/14.12/
 
 # PKG_SOURCE_URL:=https://build.allseenalliance.org/baseservices/view/BaseMaster_CoreRB14.12/job/OpenWRT_CC_base-services_Master/lastSuccessfulBuild/artifact/alljoyn_tarball/
 
-
 # SCons supports parallel builds but does not support make's jobserver
 PKG_BUILD_PARALLEL:=$(if $(CONFIG_PKG_BUILD_USE_JOBSERVER),0,1)
 
